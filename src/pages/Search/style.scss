@@ -1,0 +1,127 @@
+.single {
+  padding: 37px;
+
+  .sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .left-section {
+      display: flex;
+      margin-right: 35px;
+
+      .logo {
+        &-image {
+          border-top-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+          width: 149px;
+          height: 63px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+
+    .order-by {
+      display: flex;
+      width: 55%;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .text {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        &:hover .orderby-type {
+          display: block;
+        }
+
+        .orderby-type {
+          display: none;
+          position: absolute;
+          z-index: 9999;
+          background-color: #E5E5E5;
+          width: 160px;
+          font-size: 14px;
+          border: 1px solid #484848;
+          padding: 15px;
+          border-radius: 4px;
+          li {
+            margin-bottom: 15px;
+            padding: 3px;
+
+            &:hover {
+              color : #FFFFFF;
+              background: #204080;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .single {
+    .sections {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .single {
+    .sections {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single {
+    .sections {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .single {
+    .sections {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .single {
+    .sections {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .single {
+    .sections {
+      flex-direction: column;
+    }
+  }
+}
+
